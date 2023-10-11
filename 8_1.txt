@@ -1,0 +1,13 @@
+8. Write and test a program to get the number of items in a list / combo 
+box.
+
+<html>
+<body>
+<select>
+<option>Volvo</option>
+<option>Express</option>
+<option>Mercedes</option>
+<option>RajaHamsa</option>
+</select>
+</body>
+</html>

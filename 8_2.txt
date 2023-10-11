@@ -1,0 +1,16 @@
+public class Comboitemcount extends SeleneseTestCase {
+public void setUp() throws Exception {
+selenium = new DefaultSelenium("localhost", 4444, "*chrome",
+"file:///C:/Users/Savitha/Desktop/combocount.html");
+selenium.start(); }
+public void testloginlogout(){
+selenium.setSpeed("1000");
+selenium.open("file:///C:/Users/Savitha/Desktop/combocount.html");
+selenium.waitForPageToLoad("30000");
+selenium.windowMaximize();
+String[] selectelements = new String[1000];
+selectelements= selenium.getSelectOptions("//select");
+System.out.println("The number of options present in the given select box is "
++selectelements.length);
+}
+}
